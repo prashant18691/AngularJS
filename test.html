@@ -1,10 +1,14 @@
 
-<html>
+<html ng-app="MyApp">
  <head>
   </head>
-  <body>
-    
+  <body ng-controller="MyController">
+    <ul>
+     <li ng-repeat="i in $list">
+      {{i.name}}-{{i.mark}}
+     </li>
+   </ul>
     
   </body>
-  
+ <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 </html>
