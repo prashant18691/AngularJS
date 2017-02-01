@@ -6,10 +6,10 @@
   </head>
   <body ng-app="myApp" ng-controller="myController">
    <table>
-   <tr><th><span ng-click="name">Name</span></th><th><span ng-click="city">City</span></th></tr>
+   <tr><th><span ng-click="sortFunc('name')">Name</span></th><th><span ng-click="sortFunc('mark')">Mark</span></th></tr>
    <tr ng-repeat="x in details | orderBy : sort">
    <td>{{x.name}}</td>
-   <td>{{x.city}}</td>
+   <td>{{x.mark}}</td>
    
    </tr>
    </table>
