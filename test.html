@@ -1,10 +1,10 @@
 
-<html ng-app="myApp">
+<html>
  <head>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
   <script src="MyApp.js" />
   </head>
-  <body ng-controller="myController">
+  <body ng-app="myApp" ng-controller="myController">
    <table>
    <tr><th><span ng-click="name">Name</span></th><th><span ng-click="city">City</span></th></tr>
    <tr ng-repeat="x in details | orderBy : sort">
