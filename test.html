@@ -1,19 +1,27 @@
-
+<!DOCTYPE html>
 <html>
- <head>
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
-  <script src="MyApp.js" />
-  </head>
-  <body ng-app="myApp" ng-controller="myController">
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+<script src="/C:/Users/praupadh.ORADEV/Downloads/AngularJS-master/myApp.js"></script>
+</head>
+
+
+<body ng-app="myApp" ng-controller="myController">
    <table>
    <tr><th><span ng-click="sortFunc('name')">Name</span></th><th><span ng-click="sortFunc('mark')">Mark</span></th></tr>
    <tr ng-repeat="x in details | orderBy : sort">
    <td>{{x.name}}</td>
    <td>{{x.mark}}</td>
    
-   </tr>
-   </table>
+</tr>
+</table>
     
-  </body>
- 
+</body>
+
+
 </html>
+
+
+
+
+
